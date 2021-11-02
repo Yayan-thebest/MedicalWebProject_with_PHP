@@ -1,0 +1,434 @@
+@charset "UTF-8"
+*{
+
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight:400;
+color: #707070
+;
+font-style:
+normal;
+font-variant:
+normal;
+text-transform:
+none;
+text-decoration:
+none solid rgb(112, 112, 112);
+
+}
+
+nav{
+background-color:  ;
+color: #000000;
+
+}
+ul{
+  color :#000000;
+}
+
+.titre{
+	font-size: 25px;
+	color: #66b3ff;
+}
+
+h2{
+color: ;
+}
+h3, h2{
+font-size: 25px;
+	color: #66b3ff;
+}
+
+.imgCouverture{
+	height: ;
+}
+
+.navbarColor{
+color:  #66b3ff;	
+}
+.textPrinc{
+	color: inherit;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #66b3ff;
+}
+
+
+/* Then style the iframe to fit in the container div with full height and width */
+.container-iframe{
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/***/
+
+/***TEST*****/
+
+
+.hero h1 {
+    /* Text styles */
+    font-size: 4em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    height: 80px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: blacks;
+    text-decoration: none;
+    font-size: 1.3em;
+    
+    /* Border styles */
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.hero {
+    /* Sizing */
+    width: 100%;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-inner{
+  color:black;
+  text-align: center;
+
+}
+
+/*second bckg dqqns l'acceuil*/
+.hero-2 h1 {
+    /* Text styles */
+    font-size: 4em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero-2 {
+    /* Sizing */
+    width: 100%;
+    height: 50vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image: url(../images/4.jpg);
+    background-size: 85%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: ;
+}
+
+.hero-inner-2{
+  color:black;
+  text-align: center;
+
+}
+.hero-2 .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    
+    /* Border styles */
+    border: 1px solid #66b3ff;
+    background-color: #66b3ff;
+    border-radius: 10px;
+}
+
+/* bckg dans la page service*/
+.hero-serv h1 {
+    /* Text styles */
+    font-size: 4em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero-serv {
+    /* Sizing */
+    width: 100%;
+    height: 50vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: ;
+}
+
+.hero-inner-serv{
+  color:black;
+  text-align: center;
+
+}
+.hero-serv .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    
+    /* Border styles */
+    border: 1px solid #66b3ff;
+    background-color: #66b3ff;
+    border-radius: 10px;
+}
+
+/* bckg dans la page about*/
+.hero-about h1 {
+    /* Text styles */
+    font-size: 4em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero-about {
+      /* Sizing */
+    width: 100%;
+    height: 50vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: #000000;
+    
+    /* Background styles */
+    background-image: url(../images/7.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: ;
+}
+/* bckg dans la page about*/
+.hero-patient h1 {
+    /* Text styles */
+    font-size: 4em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero-patient {
+    /* Sizing */
+    width: 100%;
+    height: 50vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image: url(../images/BkgClient.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: ;
+}
+.hero-inner-patient{
+  color:black;
+  text-align: center;
+
+}
+.hero-patient .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    
+    /* Border styles */
+    border: 1px solid #66b3ff;
+    background-color: #66b3ff;
+    border-radius: 10px;
+}
+
+
+
+.hero-inner-patient{
+  color:black;
+  text-align: center;
+
+}
+.hero-patient .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    
+    /* Border styles */
+    border: 1px solid #66b3ff;
+    background-color: #66b3ff;
+    border-radius: 10px;
+}
+
+.background {
+  padding-bottom: 150px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: %;
+}
+
+/*logo et texte dans about*/
+.item{
+  width:200px;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-left: 30px;
+  float:left;
+}
+
+.item p {
+  font-size: 20px;
+}
+
+#index-gallery{
+  width:px;
+}
+/*on masque  les buttons de payement au lancement de la page*/
+.payerMaintenant{ display: none; }
+.payerArriver{  display: none; }
+
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+
+
+.success {
+background: #F2DEDE;
+color : #40754C;
+padding: 10px;
+width: 95%;
+border-radius: 5px;
+margin:20px auto;
+}
+
+#frame{
+  display: none;
+}
+
+
+

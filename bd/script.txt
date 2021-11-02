@@ -1,0 +1,90 @@
+CREATE TABLE patient(
+	NumeroPatient INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ 	NomPrenom VARCHAR(200),
+ 	DateNaissance DATE,
+ 	LieuNaissance VARCHAR(100),
+	Sexe VARCHAR(2),
+	Telephone INT,
+	Email VARCHAR(100),
+	Adresse VARCHAR(100),
+	Password VARCHAR (255),
+	Type VARCHAR (15)
+	
+);
+
+CREATE TABLE docteur(
+	NumeroDocteur INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ 	NomPrenom VARCHAR(200),
+ 	DateNaissance DATE,
+ 	LieuNaissance VARCHAR(100),
+	Sexe VARCHAR(2),
+	Telephone INT,
+	Email VARCHAR(100),
+	Salaire INT,
+	Password VARCHAR(255),
+	Type VARCHAR(15)
+	
+);
+
+CREATE TABLE post(
+	NumeroPost INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	NomPost VARCHAR(200)
+);
+
+
+CREATE TABLE horaireDocteur (
+	NumeroDocteur INT,
+	NumeroPost INT,
+	Horaire1 DATE,
+	Horaire2 DATE,
+	Horaire3 DATE,
+	Horaire4 DATE,
+
+	FOREIGN KEY (NumeroDocteur) REFERENCES docteur(NumeroDocteur),
+	FOREIGN KEY (NumeroPost) REFERENCES post(NumeroPost)
+);
+
+CREATE TABLE typeConsultation (
+	NumeroTypeConsultation INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ 	NomConsultation VARCHAR(200),
+ 	Prix INT
+);
+
+CREATE TABLE HoraireConsultation(
+	NumeroTypeConsultation INT,
+	NumeroDocteur INT,
+ 	Horaire1 DATE,
+	Horaire2 DATE,
+	Horaire3 DATE,
+	Horaire4 DATE,
+
+	FOREIGN KEY (NumeroTypeConsultation) REFERENCES typeConsultation(NumeroTypeConsultation),
+	FOREIGN KEY (NumeroDocteur) REFERENCES horaireDocteur(NumeroDocteur)	
+);
+
+
+
+// base
+CREATE TABLE rendezVous(
+	NumeroRdv INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ 	NumeroPatient INT,
+	Nom VARCHAR(100),
+	NumeroTypeConsultation INT,
+	Consultation VARCHAR(100),
+	NumeroDocteur INT,
+	DateRdv VARCHAR(20),
+	Payement VARCHAR(100),
+	MessagePatient VARCHAR (400),
+	
+        FOREIGN KEY (NumeroPatient) REFERENCES patient(NumeroPatient),
+	FOREIGN KEY (NumeroTypeConsultation ) REFERENCES typeConsultation(NumeroTypeConsultation),	
+	FOREIGN KEY (NumeroDocteur) REFERENCES docteur(NumeroDocteur)		
+);
+
+ALTER TABLE post
+ALTER COLUMN NomPost NVARCHAR(200) [NULL | NOT NULL];
+
+
+
+
+
